@@ -1,0 +1,112 @@
+%This imports the file containing all of the configuration for the document
+\input{lib/preamble.tex}
+
+%header and Footer set up
+\chead{3D Printer Project Requirements Document}% Right Heading(Must be the title of the lab)
+\rfoot{\thepage}% Right Footer - Page numbers
+
+\begin{document}
+  %%%%%%%%%%%%%%%%%%%%%%%
+  %START OF THE DOCUMENT%
+  %%%%%%%%%%%%%%%%%%%%%%%
+  \tableofcontents\newpage
+  \noindent\textbf{Stake Holders:} Guy from Alden(Client), Kris Schindler(Liaison)\\\\
+
+  \noindent\textbf{Task force:} Nolan Foster, Shawn Milligan, Bob Shannon, Micheal Alicea, Aaron, Sameep, Shiraz\\\\
+
+  \begin{center}
+  \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Version} & \textbf{Date} & \textbf{Author} & \textbf{Description}\\
+    \hline
+    $1.0$ & $2/15/2016$ & Nolan Foster & Initial Version\\
+    \hline
+  \end{tabular}
+
+  \end{center}
+  \newpage
+  %%%%%%%%%%
+  %OVERVIEW%
+  %%%%%%%%%%
+
+  %Section of document will be labeled numerically ex. 1,2,3.. for each time it is used
+  \section{Project Description}
+  A system that can be used to remotely monitor and control multiple 3D printer's
+  in a school lab while simultaneously monitoring and controlling the environment
+  in which the printer is operating.
+
+  \subsection{Service Need}
+  The client has had difficulty with print jobs terminating prematurely due to errors.
+  It is believed the failures are due to environmental factors. Because of the nature
+  of 3D printing, prints take a great deal of time and its not feasibly to continuously
+  monitor the 3D print on site.
+
+  \subsection{Project Purpose \& Scope}
+  The purpose of this project is to provide an easily accessible interface in which
+  students and administrators can monitor and control the 3D printers remotely. With
+  the ability to restrict access to users. As well as diagnose printer errors.
+
+  \subsection{Technical Challenges/Issues}
+  The client is currently aware of other systems that allow for this funtionality
+  as well as some built in hardware that can be tapped into. Namely the camera and
+  ethernet port. The main challege is to have a system that can work within the
+  school network. We also need to keep in mind cost and modularity of the system to
+  allow for the client to expand to differnt brands of 3D printers.
+
+  \subsection{Timeline}
+  \begin{center}
+  \begin{tabular}{|l|c|}
+    \hline
+    Review of Design/Prototype & March 1st, 2016 \\
+    \hline
+    Install, Development and Internal Testing & April 1st, 2016 \\
+    \hline
+    Beta Rollout & April 15th, 2016 \\
+    \hline
+    Production Rollout & April 29th, 2016 \\
+    \hline
+  \end{tabular}
+  \end{center}
+
+  \section{Requirements}
+
+  \subsection{Functional Requirements}
+  \textbf{Primary}
+  \begin{enumerate}
+    \item{}Users can view print status and details
+    \item{}Users can recive notifications if the print failed
+    \item{}Users can start/stop a print job
+    \item{}Users can monitor enviroment
+    \item{}Administarors can restrict access to users
+  \end{enumerate}
+  \textbf{Secondary}
+  \begin{enumerate}
+    \item{}Users can log printer errors
+    \item{}Users can diognose printer errors
+    \item{}Users can take a snapshot of print progress
+  \end{enumerate}
+  \subsection{Technical Requirements}
+  \textbf{Primary}
+  \begin{enumerate}
+    \item{}Cross-browser/platform support(IE, Firefox, Chrome, Safari)
+    \item{}Mobile support
+    \item{}Support for common sensors(e.x. Arduino compatable)
+    \item{}API with acceptable level of documentation
+  \end{enumerate}
+  \textbf{Secondary}
+  \begin{enumerate}
+    \item{}The system should be built using free open source software
+    \item{}The system should be built using an application framework . To help programmers account for differnces in operating systems, interfaces and displays.
+  \end{enumerate}
+  \subsection{Usability Requirements}
+  \begin{enumerate}
+    \item{}The system will fully function in major browsers.
+    \item{}The system will support mobile browsers in some way
+  \end{enumerate}
+  \section{Project Constraints}
+  \subsection{Time Constraints} The project must be completed with in the spring 2016 semester.
+
+  \subsection{Scope Constraints} This project will be limited to dealing with the software and hardware installation, customization, and implementation. Once the project is complete, the work will need to be resumed by students or other CSE 453 teams in the following semesters.
+
+
+\end{document}
